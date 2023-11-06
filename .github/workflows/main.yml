@@ -75,7 +75,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
     - name: Run tests
-      run: dotnet test PubSubServer.Client --configuration Release
+      run: dotnet test RedisWorker --configuration Release
 
   deploy:
     # Publish only when creating a GitHub Release
